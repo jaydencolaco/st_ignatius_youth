@@ -32,7 +32,7 @@ export default function Hero() {
           className="text-[#8B9BC0] text-[10px] sm:text-sm font-sans tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-6 flex items-center gap-2 sm:gap-3 flex-wrap"
         >
           <span className="w-6 h-px bg-[#F7B731]" aria-hidden="true" />
-          St. Ignatius Church&nbsp;·&nbsp;Jacobs Circle&nbsp;·&nbsp;Mumbai
+          St. Ignatius Church&nbsp;·&nbsp;Jacob Circle&nbsp;·&nbsp;Mumbai
         </motion.p>
 
         {/* YOUTH */}
@@ -68,7 +68,7 @@ export default function Hero() {
         </div>
 
         {/* Screen-reader headline */}
-        <h1 className="sr-only">Youth Ignited — St. Ignatius Church, Jacobs Circle, Mumbai</h1>
+        <h1 className="sr-only">Youth Ignited — St. Ignatius Church, Jacob Circle, Mumbai</h1>
 
         {/* Tagline */}
         <motion.p
