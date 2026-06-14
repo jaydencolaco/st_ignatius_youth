@@ -100,7 +100,7 @@ export default function Footer() {
             </h3>
             <address className="not-italic text-[#8B9BC0] text-sm font-sans leading-relaxed">
               St. Ignatius Church<br />
-              Jacobs Circle<br />
+              Jacob Circle<br />
               Mumbai, Maharashtra<br />
               India
             </address>
