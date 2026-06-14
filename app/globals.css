@@ -89,9 +89,12 @@
     background-color: #07090F;
     color: #F0F4FF;
     font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
   }
   html {
     background-color: #07090F;
+    overflow-x: hidden;
   }
 }
 

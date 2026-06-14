@@ -23,13 +23,13 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[108px] pb-20">
         {/* Eyebrow */}
         <motion.p
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-[#8B9BC0] text-xs sm:text-sm font-sans tracking-[0.3em] uppercase mb-6 flex items-center gap-3"
+          className="text-[#8B9BC0] text-[10px] sm:text-sm font-sans tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-6 flex items-center gap-2 sm:gap-3 flex-wrap"
         >
           <span className="w-6 h-px bg-[#F7B731]" aria-hidden="true" />
           St. Ignatius Church&nbsp;·&nbsp;Jacobs Circle&nbsp;·&nbsp;Mumbai
@@ -42,7 +42,7 @@ export default function Hero() {
               key={i}
               initial={{ opacity: 0, y: -40 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.0, delay: 0.5 + i * 0.05, ease: 'easeOut' }}
+              transition={{ duration: 0.4, delay: 0.5 + i * 0.05, ease: 'easeOut' }}
               className="text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[9rem] font-bold leading-none text-[#F0F4FF] select-none"
               style={{ fontFamily: "'Clash Display', sans-serif" }}
             >
@@ -75,7 +75,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.9 }}
-          className="text-xl sm:text-2xl md:text-3xl text-[#F0F4FF] font-sans italic mb-4 text-balance"
+          className="text-xl sm:text-2xl md:text-3xl text-[#F0F4FF] font-sans italic mb-4 text-balance leading-snug"
         >
           &ldquo;Be part of something that outlasts you.&rdquo;
         </motion.p>
@@ -96,17 +96,17 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ type: 'spring', stiffness: 200, damping: 20, delay: 1.1 }}
-          className="flex flex-wrap gap-4"
+          className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4"
         >
           <Link
             href="/join"
-            className="relative btn-pulse px-7 py-3.5 rounded-md font-semibold font-sans text-[#07090F] bg-[#F7B731] hover:bg-[#FF6B35] transition-colors duration-200 text-sm sm:text-base"
+            className="relative btn-pulse px-7 py-3.5 rounded-md font-semibold font-sans text-[#07090F] bg-[#F7B731] hover:bg-[#FF6B35] transition-colors duration-200 text-sm sm:text-base text-center"
           >
             Join the Movement
           </Link>
           <Link
             href="/council"
-            className="px-7 py-3.5 rounded-md font-semibold font-sans text-[#F0F4FF] border border-[#1E2A45] hover:border-[#F7B731] hover:text-[#F7B731] transition-colors duration-200 text-sm sm:text-base flex items-center gap-2"
+            className="px-7 py-3.5 rounded-md font-semibold font-sans text-[#F0F4FF] border border-[#1E2A45] hover:border-[#F7B731] hover:text-[#F7B731] transition-colors duration-200 text-sm sm:text-base flex items-center justify-center gap-2"
           >
             Explore Our Legacy
             <span aria-hidden="true">→</span>

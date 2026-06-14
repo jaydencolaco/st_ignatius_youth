@@ -42,7 +42,7 @@ export default function LegacyTeaser() {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 * i }}
-              className={`text-4xl sm:text-5xl md:text-6xl font-bold leading-tight ${
+              className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight ${
                 i === 2 ? 'text-[#F7B731]' : 'text-[#F0F4FF]'
               }`}
               style={{ fontFamily: "'Clash Display', sans-serif" }}
@@ -63,7 +63,7 @@ export default function LegacyTeaser() {
             {[...pastNames, ...pastNames].map((item, i) => (
               <div
                 key={i}
-                className={`flex-shrink-0 w-36 rounded-xl border p-4 text-center ${
+                className={`flex-shrink-0 w-28 sm:w-36 rounded-xl border p-3 sm:p-4 text-center ${
                   i === pastNames.length
                     ? 'border-[#F7B731] bg-[#F7B731]/10'
                     : 'border-[#1E2A45] bg-[#111827] opacity-60 blur-[1px]'

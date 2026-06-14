@@ -5,7 +5,7 @@ export const siteContent = {
     eventsHeld: 30,
     membersStrong: 35,
   },
-  story: `Youth Ignited began not with a grand plan, but with a simple conviction: that the young people of St. Ignatius Church, Jacobs Circle, were capable of something extraordinary.
+  story: `Youth Ignited began not with a grand plan, but with a simple conviction: that the young people of St. Ignatius Church, Jacob Circle, were capable of something extraordinary.
 
 Founded over four years ago, the group grew from a handful of passionate individuals into a fully-fledged movement — one that hosts events, serves the community, and gives every young person from Zone 1 to Zone 9 a place to belong.
 

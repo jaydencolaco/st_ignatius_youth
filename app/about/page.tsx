@@ -39,7 +39,7 @@ export default function AboutPage() {
     <>
       <AnnouncementTicker />
       <Navbar />
-      <main className="bg-[#07090F] pt-28">
+      <main className="bg-[#07090F] pt-[108px]">
 
         {/* Page Header */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -126,13 +126,13 @@ export default function AboutPage() {
               >
                 The Ignition Prayer
               </h2>
-              <div className="flex gap-6 items-start text-left">
-                <div className="w-1 flex-shrink-0 self-stretch bg-[#F7B731] rounded-full" aria-hidden="true" />
+              <div className="flex gap-4 sm:gap-6 items-start text-left">
+                <div className="w-0.5 sm:w-1 flex-shrink-0 self-stretch bg-[#F7B731] rounded-full" aria-hidden="true" />
                 <div className="flex flex-col gap-3">
                   {prayerLines.map((line, i) => (
                     <p
                       key={i}
-                      className={`font-sans text-lg sm:text-xl leading-loose ${
+                      className={`font-sans text-base sm:text-lg sm:text-xl leading-loose ${
                         line === 'Amen.' ? 'text-[#F7B731] font-semibold' : 'text-[#F0F4FF]'
                       }`}
                       style={{ fontFamily: "'Clash Display', sans-serif" }}
@@ -159,7 +159,7 @@ export default function AboutPage() {
               </h2>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
-              <div className="bg-[#111827] border border-[#1E2A45] rounded-2xl p-8 sm:p-12 grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-8 sm:gap-12 items-start">
+                <div className="bg-[#111827] border border-[#1E2A45] rounded-2xl p-6 sm:p-8 md:p-12 grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-6 sm:gap-8 md:gap-12 items-start">
                 {/* Photo */}
                 <div className="flex flex-col items-center gap-3">
                   <div className="relative w-28 h-28 sm:w-36 sm:h-36 rounded-full ring-2 ring-[#F7B731] ring-offset-2 ring-offset-[#111827] overflow-hidden bg-[#1E2A45] flex-shrink-0">

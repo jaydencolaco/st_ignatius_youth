@@ -7,8 +7,8 @@ import Link from 'next/link'
 import Navbar from '@/components/layout/Navbar'
 import AnnouncementTicker from '@/components/layout/AnnouncementTicker'
 import Footer from '@/components/layout/Footer'
-import { councils } from '../../data/councils'
-import type { Council } from '../../data/councils'
+import { councils } from '@/data/councils'
+import type { Council } from '@/data/councils'
 
 // Sort newest first
 const sortedCouncils = [...councils].sort((a, b) => b.year.localeCompare(a.year))
@@ -111,7 +111,7 @@ function CouncilDisplay({ council }: { council: Council }) {
         initial={{ opacity: 0, y: 40 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
-        className="bg-[#111827] border border-[#1E2A45] rounded-2xl p-8 sm:p-12 grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-8 sm:gap-12 items-start"
+        className="bg-[#111827] border border-[#1E2A45] rounded-2xl p-6 sm:p-8 md:p-12 grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-6 sm:gap-8 md:gap-12 items-start"
       >
         <div className="flex flex-col items-center gap-3">
           <div className="relative w-28 h-28 sm:w-36 sm:h-36 rounded-full ring-2 ring-[#F7B731] ring-offset-2 ring-offset-[#111827] overflow-hidden bg-[#1E2A45] flex-shrink-0">
@@ -249,7 +249,7 @@ export default function CouncilPage() {
     <>
       <AnnouncementTicker />
       <Navbar />
-      <main className="bg-[#07090F] pt-28">
+      <main className="bg-[#07090F] pt-[108px]">
 
         {/* Header */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -266,7 +266,7 @@ export default function CouncilPage() {
         </section>
 
         {/* Year Selector */}
-        <div className="bg-[#0D1117] border-y border-[#1E2A45] px-4 py-5 sticky top-0 z-30 backdrop-blur-sm">
+        <div className="bg-[#0D1117] border-y border-[#1E2A45] px-4 py-4 sticky top-[44px] z-30 backdrop-blur-sm">
           <div className="max-w-7xl mx-auto">
             <YearSelector years={years} active={activeYear} onChange={setActiveYear} />
           </div>

@@ -75,7 +75,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
         setTimeout(() => {
           setPhase('sliding')
           setTimeout(onComplete, 700)
-        }, 1200)
+        }, 900)
       }
     }, 60)
 
@@ -93,11 +93,11 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
     >
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none" aria-hidden="true" />
       <div className="relative z-10 flex flex-col items-center gap-6">
-        <p className="text-[#8B9BC0] text-sm tracking-[0.3em] uppercase font-sans mb-2">
+        <p className="text-[#8B9BC0] text-[10px] sm:text-sm font-sans tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-2 text-center px-4">
           St. Ignatius Church · Jacobs Circle · Mumbai
         </p>
         <h1
-          className="text-5xl md:text-7xl font-bold tracking-widest text-[#F0F4FF] select-none"
+          className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-widest text-[#F0F4FF] select-none px-4 text-center"
           style={{ fontFamily: "'Clash Display', sans-serif" }}
         >
           {text.split('').map((char, i) => (
@@ -116,7 +116,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
         </h1>
         <div
           className="h-px bg-[#F7B731] transition-all duration-700 ease-out"
-          style={{ width: showLine ? '200px' : '0px', opacity: showLine ? 1 : 0 }}
+          style={{ width: showLine ? '120px' : '0px', opacity: showLine ? 1 : 0 }}
         />
       </div>
     </div>

@@ -257,7 +257,6 @@ function ContactFormSection() {
         <div className="mt-8 pt-8 border-t border-[#1E2A45]">
           <p className="text-[#8B9BC0] text-xs font-sans uppercase tracking-widest mb-4">Find us on</p>
           <div className="flex items-center gap-4">
-            
             <a
               href="https://instagram.com"
               target="_blank"
@@ -269,7 +268,6 @@ function ContactFormSection() {
               </svg>
               <span className="font-sans text-sm group-hover:text-[#F7B731]">@youthignited</span>
             </a>
-            
             <a
               href="https://facebook.com"
               target="_blank"
@@ -281,7 +279,6 @@ function ContactFormSection() {
               </svg>
               <span className="font-sans text-sm group-hover:text-[#F7B731]">Youth Ignited</span>
             </a>
-            
             <a
               href="https://wa.me/"
               target="_blank"

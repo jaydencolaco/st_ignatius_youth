@@ -143,7 +143,7 @@ export default function EventsPage() {
     <>
       <AnnouncementTicker />
       <Navbar />
-      <main className="bg-[#07090F] pt-28">
+      <main className="bg-[#07090F] pt-[108px]">
 
         {/* Header */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -160,10 +160,10 @@ export default function EventsPage() {
         </section>
 
         {/* Filters bar */}
-        <div className="bg-[#0D1117] border-y border-[#1E2A45] px-4 py-4 sticky top-0 z-30 backdrop-blur-sm">
+        <div className="bg-[#0D1117] border-y border-[#1E2A45] px-4 py-4 sticky top-[44px] z-30 backdrop-blur-sm">
           <div className="max-w-7xl mx-auto flex flex-col gap-3">
             {/* Year + Tabs row */}
-            <div className="flex flex-wrap gap-4 items-center justify-between">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start sm:items-center justify-between">
               {/* Year */}
               <select
                 value={activeYear}

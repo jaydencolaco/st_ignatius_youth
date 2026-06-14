@@ -21,7 +21,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-[#8B9BC0] text-sm font-sans leading-relaxed">
-              The official youth group of St. Ignatius Church, Jacobs Circle, Mumbai.
+              The official youth group of St. Ignatius Church, Jacob Circle, Mumbai.
             </p>
             <div className="flex items-center gap-3 mt-2">
               <a
@@ -120,7 +120,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="mt-8 text-[#4A5568] text-xs font-sans">
-            &copy; {new Date().getFullYear()} Youth Ignited — St. Ignatius Church, Jacobs Circle, Mumbai
+            &copy; {new Date().getFullYear()} Youth Ignited — St. Ignatius Church, Jacob Circle, Mumbai
           </p>
         </div>
       </div>
