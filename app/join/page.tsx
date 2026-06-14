@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef } from 'react'
+import { Suspense, useRef } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { motion, useInView } from 'framer-motion'
 import Navbar from '@/components/layout/Navbar'
@@ -257,6 +257,7 @@ function ContactFormSection() {
         <div className="mt-8 pt-8 border-t border-[#1E2A45]">
           <p className="text-[#8B9BC0] text-xs font-sans uppercase tracking-widest mb-4">Find us on</p>
           <div className="flex items-center gap-4">
+            
             <a
               href="https://instagram.com"
               target="_blank"
@@ -268,6 +269,7 @@ function ContactFormSection() {
               </svg>
               <span className="font-sans text-sm group-hover:text-[#F7B731]">@youthignited</span>
             </a>
+            
             <a
               href="https://facebook.com"
               target="_blank"
@@ -279,6 +281,7 @@ function ContactFormSection() {
               </svg>
               <span className="font-sans text-sm group-hover:text-[#F7B731]">Youth Ignited</span>
             </a>
+            
             <a
               href="https://wa.me/"
               target="_blank"
@@ -297,7 +300,8 @@ function ContactFormSection() {
   )
 }
 
-export default function JoinPage() {
+// Separated into its own component so useSearchParams() is inside a Suspense boundary
+function JoinPageContent() {
   const searchParams = useSearchParams()
   const success = searchParams.get('success') === 'true'
 
@@ -334,5 +338,13 @@ export default function JoinPage() {
       </main>
       <Footer />
     </>
+  )
+}
+
+export default function JoinPage() {
+  return (
+    <Suspense>
+      <JoinPageContent />
+    </Suspense>
   )
 }
